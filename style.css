@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+/* General reset and styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pirata One", system-ui;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: black; */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333; /* dark background color */
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* ensure it stays above other content */
+}
+
+.navbar .logo a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+/* Hero section styles */
+.hero {
+    background-image:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)), url('images/3 (2).jpg'); /* replace with actual image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff6347; /* lighter red on hover */
+}
+ /* .container{
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+
+ .content {
+    width: 40%;
+
+ }
+  
+.contentbox{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+  .contentbox .img1{
+      height: 200px;
+  }
+ .contentbox .img22{
+    display: flex;
+}
+
+
+.contentbox .img22 h1{
+    font-size: 15px;
+}
+  .contentbox .img2{
+     height: 100px;
+     width :200px;
+  }
+
+  .contentbox .img2 {
+    height: 100px;
+    width :200px;
+ } */
+
+
+ /* Resetting default margin and padding */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Global container styles */
+.container {
+    background-color: black;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff7f7;
+    line-height: 1.6;
+}
+
+/* Content section styles */
+.content {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content i {
+    font-size: 48px;
+    color: #d8483e;
+}
+
+.content h1 {
+    font-size: 49px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.content h2 {
+    font-size: 26px;
+    color: #d8483e;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+/* Image and text box styles */
+.contentbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img1 {
+    width: 250px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+.img22 {
+    text-align: center;
+}
+
+.img2 {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.img22 h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d8483e;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
